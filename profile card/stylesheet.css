@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(122, 129, 129);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+   padding: 5% 5%;
+  background-color: rgba(223, 224, 224, 0.733);
+  border-radius: 7%;
+  box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover{
+  transform: scale(1.05);
+}
+
+img {
+  width: 200px;
+  border-radius: 20%;
+  margin-left: 25%;
+}
+
+h2 {
+  text-align: center;
+  padding: 3%;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+p {
+  font-weight: 400;
+  padding-bottom: 10%;
+}
+
+.socials {
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+   gap: 20px;
+}
+
+
+
+a {
+ text-decoration: none;
+  background-color: rgb(84, 155, 189);
+  padding: 2% 0%;
+  color: rgb(39, 38, 37);
+  border-radius: 8px;
+  font-weight: 600;
+  gap: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover{
+  background-color: rgb(255, 255, 255);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba(100, 150, 225, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+    padding: 8% 5%;
+    border-radius: 20px;
+    padding-bottom: 250px;
+  }
+
+  img {
+    width: 150px;
+    margin: 0 auto 20px auto;
+  }
+
+  h2, h3, p {
+    text-align: center;
+    font-size: 90%;
+  }
+
+  .socials {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  a {
+    font-size: 90%;
+    padding: 3% 0%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10% 5%;
+    border-radius: 15px;
+    padding-bottom: 130px;
+  }
+
+  img {
+    width: 120px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  /* .socials{
+    flex-wrap: wrap;
+  } */
+
+  a {
+    padding: 4% 0%;
+    font-size: 0.9rem;
+  }
+}
